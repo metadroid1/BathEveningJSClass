@@ -1,0 +1,29 @@
+body{
+    background-color: lightsalmon;
+    color: black;
+}
+.container{
+    border: 2px dashed blue;
+    display: inline;
+    padding: auto;
+}
+.animatebox{
+    align-items: center;
+    background-color: chocolate
+    color antiquewhite;
+    padding: auto;
+    width: 200px;
+    height: 300px;
+    animation-name: boxchange;
+    animation-duration: 5s;
+}
+@keyframes boxchange{
+    from{
+        background-color: chocolate;
+    }
+    to{
+        background-color: aqua;
+        width: 300px;
+    }
+    
+}

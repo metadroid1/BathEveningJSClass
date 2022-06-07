@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.scene{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(113, 179, 237);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.scene img{
+    position: absolute;
+}
+.city{
+    bottom: 0px;
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.plane{
+    top: 50px;
+    left: 100px;
+    width: 45%;
+}
+
+.plane{
+    animation: cloud-move 1s linear infinite forwards;
+}
+.cloud{
+    animation: cloud-move 1s linear infinite forwards;
+}
+.cloud1{
+    width: 100px;
+    top: 0;
+    left: 30px;
+}
+.cloud2{
+    width: 10%;
+    top: 0;
+    left: 50%;
+}
+.cloud3{
+    width: 20%;
+    top: 0;
+    right:0;
+}
+.boat{
+    width: 30%;
+    bottom: 0;
+    right: 30px;
+}
+.boat{
+        animation: boat-move 10s linear infinite forwards;
+}
+
+@keyframes cloud-move{
+    to{
+        transform: translateX(25px);
+    }
+}
+
+@keyframes plane-move{
+    to{
+        transform: translate(300px,100px);
+    }
+}
+
+@keyframes boat-move{
+    to{
+        transform: translateX(-300px);
+    }
+}
